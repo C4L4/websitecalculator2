@@ -1,0 +1,921 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+.container{
+    display: none;
+}
+.d{
+    margin-left: 390px;
+}
+.text{
+    margin-left: -780px;
+}
+.show{
+    display: flex;
+    
+}
+.conteudo h1{
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.conteudo{
+    width: 50%;
+    border: 2px dashed white;
+    margin-top: 20em;
+    margin-left: 30em;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(22, 123, 136, 0.774), rgb(13, 102, 124), rgb(13, 100, 116));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem; /* espacamento interno */
+    display: none;
+}
+
+#formulario {
+    width: 50%;
+    margin-top: 300px;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+    background-color: #15172b;
+    color: white;
+}
+
+.alerta {
+    background: #ca281d;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* CLASS PARA FORMATAR COM JS */
+.aprovado {
+    background: #59c715;
+}
+
+.reprovado {
+    background: #d4291d;
+}
+
+.recuperacao {
+    background: #e6ad04;
+}
+
+/* FORMULARIO */
+form {
+    margin: 1rem;
+}
+
+/* DIV DOS INPUTS */
+.form-group {
+    margin: 0.625rem;
+}
+
+/* INPUTS */
+input[type=number]{
+    padding: 5px;
+    text-align: center;
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 40px;
+    outline: 0;
+    padding: 4px 10px 0;
+    width: 100%;
+}
+
+.cx, input[type=text] {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 40px;
+    outline: 0;
+    padding: 4px 10px 0;
+    width: 100%;
+}
+.cx{
+    background-color: #303245;
+}
+
+/* BOTOES */
+.form-group button {
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    box-shadow: 0 0 3px #222;
+}
+
+
+#btnCalcular {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+#btnCalcular:hover{
+    box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255);
+}
+
+#btnLimpar {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+#btnLimpar:hover{
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255);
+}
+
+
+.a1, .a2{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    border: 1px solid;
+    border-radius: 1000px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    background-color: #00FA9A;
+
+}
+.a3{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    border: 1px solid;
+    border-radius: 1000px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    background-color: #00FA9A;
+   
+}
+#banner2{
+    background-image: url("banner.jpg");
+    background-size: 1850px;
+    background-repeat: no-repeat;
+    width: 115.7em;
+    height: 17.7em;
+    margin: 0;
+    border: 9px double rgba(8, 68, 77, 0.776);
+    position: fixed;
+    margin-left: 34px;
+    }
+.dnone{
+    display: none;
+}
+.dblock{
+    display: block;
+}
+.a4{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    border: 1px solid;
+    border-radius: 1000px;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    background-color: #00FA9A;
+    width: 150px;
+
+}
+a{
+    background-color: #222;
+    padding: 7px;
+    border-radius: 20px;
+}
+.sk a:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+.sk button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+.sk{
+    margin-top: 13em;
+    
+}
+.a3{
+    margin: auto auto auto -1000px;
+}
+.a1{
+    margin: auto auto auto -1000px;
+}
+
+.aa1{
+    transition: .2s;
+    margin: auto 3em auto 70em;
+}
+
+.aa3{
+    transition: .2s;
+    margin: auto 3em auto 6em;
+}
+
+.hidden{
+    display: none;
+}
+.d{
+    display: flex;
+}
+h1{
+    margin-left: 400px;
+}
+
+
+/* botão de fechar calcular notas*/
+
+
+.fechar{
+    margin-left: 330px;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+}
+.fx{
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    rotate: 45deg;
+    margin-top: 8px;
+    margin-left: 1.5px;
+}
+.fx1{
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    rotate: -45deg;
+    margin-top: -2px;
+    margin-left: 1.5px;
+
+}
+
+/* ______________________________ */
+
+
+/* botão de fechar calculadora */
+
+
+#fechar{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    margin: -20px 0 20px 1000px;
+}
+.fx2{
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    rotate: 45deg;
+    margin-top: 7.5px;
+    margin-left: 1px;
+}
+.fx3{
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    rotate: -45deg;
+    margin-top: -2px;
+    margin-left: 1px;
+}
+
+#exit2{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    margin-left: 106.7em;
+    background-image: url("x.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: -1px 0px;
+}
+
+/* ______________________________ */
+
+
+
+/* estilização da calculadora */
+
+
+#calculadora table {
+    padding: 0;
+    box-sizing: content-box;
+    background-color: #CFD8DC; 
+    border: 0 double black;
+    font-size: 1.5625rem;
+    border-radius: 15px;
+  }
+  
+  
+  
+  #calculadora tr {
+    width: 100%;
+    height:100%;
+  }
+  
+  
+  #calculadora tr td input {
+    width: 190px;
+    height: 60px;
+    outline: none;
+    border: 1px solid #303030;
+    background: #212121;
+    color: #06a5b1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #calculadora td input:hover {
+    color: #fff;
+    box-shadow: 0 0 10px #15a6ca, 0 0 25px #001eff, 0 0 50px #0a75a7;
+    transition-delay: 0.s;
+  }
+  
+  #calculadora td input#tela {
+      background-color: #fff;
+      color: black;
+    text-align: center;
+    width: 760px;
+    height: 100px;
+    margin: 0px 0px 100px 3px;
+    font-size: 20px;
+    box-shadow: 0 0 10px #00d9ff, 0 0 25px #001eff, 0 0 50px #04789b;
+  
+  }
+  
+  #calculadora td input#tela:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  .text{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px #fff,
+                 0 0 25px #fff;
+    margin-top: -1em;
+    text-align: center;
+    margin-left: 2em;
+    font-weight: bold;
+  }
+  #calculadora{
+    border: 5px dashed rgb(0, 0, 0);
+    width: 790px;
+    height: 540px;
+    margin-left: 14em;
+      
+  }
+
+/* ______________________________ */
+
+
+  /* estilização do banner e menu hamburguer*/
+
+
+    .container2{
+    position: relative;
+    width: 60px;
+    margin: 0px;
+    }
+    .btn {
+    position: absolute;
+    width: 60px;
+    height: 60px; top: 0; left: 0px;cursor: pointer;
+    }
+    .btn-left {
+   background-color: #000000;
+   position: absolute;
+   height: 4px;
+   width: 15px;
+   top: 30px;
+   left: 0px;
+   -webkit-transition-duration: 0.5s;
+   transition-duration: 0.5s;
+  }
+  .btn-right {
+    background-color: #000000;
+    position: absolute;
+    height: 4px;
+    width: 15px;
+    top: 30px;
+    left: 15px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-left:before {
+    background-color: #000000;
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    content: "";
+    top: -20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-left:after {
+    background-color: #000000;
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    content: "";
+    top: 20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-right:before {
+    background-color: #000000;
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    content: "";
+    top: -20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-right:after {
+    background-color: #000000;
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    content: "";
+    top: 20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .active .btn-left {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: transparent;
+  }
+  .active .btn-left:before {
+    -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+    transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+  }
+  .active .btn-left:after {
+    -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+    transform: rotateZ(-45deg) scaleX(1.4) translate(10.5px, -13.5px);
+  }
+  .active .btn-right {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: transparent;
+  }
+  .active .btn-right:before {
+    -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+    transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+  }
+  .active .btn-right:after {
+    -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+    transform: rotateZ(45deg) scaleX(1.4) translate(-10px, -13.5px);
+  }
+  
+  
+  /* ______________________________ */
+
+  /* menu das videoaulas */
+
+
+/*
+Inspiration for this menu: https://dribbble.com/shots/2962837-Header-Nav by Scout: https://dribbble.com/scout
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,500';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, nav, section, article, hgroup, figure {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* 
+Full screen background image
+*/
+.hero {
+  background: url('https://hd.unsplash.com/photo-1454165804606-c3d57bc86b40');
+  background-size: cover;
+  width: 90%;
+  height: 100%;
+  position: relative;
+}
+
+/*
+Blueish tint overlay
+*/
+.hero:after {
+  content: '';
+  background: rgba(0, 0, 64, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+Making sure everything in .hero sits above our :after elements 
+*/
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+#masthead {
+  padding: 2.5em 0;
+  position: relative;
+}
+
+#masthead.is-active {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*
+Using this method because browsers can transition opacity very cheaply as opposed to using background: rgba
+https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
+*/
+#masthead:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#masthead.is-active:after {
+  opacity: 1;
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  align-items: left;
+  font: inherit;
+  margin: 0.8125em 0 0;
+  overflow: visible; 
+  outline: none;
+  padding: 0;
+  text-transform: none;
+  transition: opacity 0.15s;
+  appearance: none;
+}
+
+.hamburger:hover {
+  opacity: 0.7; 
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative; 
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; 
+}
+
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; 
+}
+
+#masthead.is-active .hamburger-inner, 
+#masthead.is-active .hamburger-inner::before, 
+#masthead.is-active .hamburger-inner::after {
+    background-color: #000;
+}
+
+.hamburger-inner::before, 
+.hamburger-inner::after {
+  content: "";
+  display: block; 
+}
+
+.hamburger-inner::before {
+  top: -6px; 
+}
+
+.hamburger-inner::after {
+  bottom: -6px; 
+}
+
+/*
+ * Boring
+ */
+.hamburger--boring .hamburger-inner, 
+.hamburger--boring .hamburger-inner::before, 
+.hamburger--boring .hamburger-inner::after {
+  transition-property: none; 
+}
+
+.hamburger--boring.is-active .hamburger-inner {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); 
+}
+
+.hamburger--boring.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0; 
+}
+
+.hamburger--boring.is-active .hamburger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg); 
+}
+
+.hamburger-label {
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin-left: 0.3125em;
+  text-transform: uppercase;
+}
+
+#masthead.is-active .hamburger-label {
+  color: #000;
+}
+
+.hamburger-box,
+.hamburger-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#site-nav {
+  clear: both;
+  display: flex;
+  flex-direction: column; 
+  height: 0;
+  overflow: hidden;
+  padding-top: 2.5em;
+}
+
+#site-nav.is-active {
+  height: auto;
+  overflow: visible;
+}
+
+#site-nav .col { 
+  padding-bottom: 2.5em;
+} 
+
+@media screen and (min-width: 550px) {
+  #site-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  #site-nav .col {
+    flex: 0 0 50%;
+  } 
+}
+
+@media screen and (min-width: 768px) {
+  #site-nav .col {
+    flex: 0 0 33.333333333%;
+  } 
+}
+
+@media screen and (min-width: 960px) {
+  #site-nav {
+    flex-wrap: nowrap;
+  }
+  
+  #site-nav .col {
+    flex: 0 0 20%;
+  } 
+  
+  #site-nav .col:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }  
+}
+
+#site-nav h4 {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+#site-nav ul {
+  list-style-type: none;
+  margin-top: 1em;
+}
+
+#site-nav li {
+  margin-bottom: 0.3125em;
+}
+
+#site-nav li a {
+  color: #b4b9ba;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background-color: white;
+  position: relative;
+  margin-top: 10px;
+}
+
+#site-nav li a:hover,
+#site-nav li a:focus {
+  color: #fff;
+  background-color: black;
+  transition: all .7s;
+}
+
+#site-nav .social {
+  margin: 0;
+  overflow: hidden;
+}
+
+#site-nav .social li {
+  float: left;
+  margin: 0 0.3125em;
+  width: 32px;
+  height: 32px;
+}
+
+#site-nav .social li svg {
+  display: block;
+  fill: #b4b9ba;
+  width: 100%;
+  height: 100%;
+  transition: fill 0.3s ease;
+}
+
+#site-nav .social li:hover svg {
+  fill: #686d6e;
+}
+
+
+
+
+
+
+#masthead .col {
+  opacity: 0;
+}
+
+#masthead.is-active .col {
+  transform: translateY(40px);
+  transition: opacity 0.3s ease;
+  animation: fade-in-stagger 0.8s ease forwards;
+}
+
+#masthead.is-active .col:nth-child(1) {
+    animation-delay: 0;
+    margin-left: 250px;
+}
+
+#masthead.is-active .col:nth-child(2) {
+    animation-delay: 0.1s;
+
+}
+
+#masthead.is-active .col:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+#masthead.is-active .col:nth-child(4) {
+    animation-delay: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@keyframes fade-in-stagger {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+.sla{
+    margin-top: 15%;
+    display: none;
+    justify-content: center;
+}
+
+

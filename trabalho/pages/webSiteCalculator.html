@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o site</title>
+    <link rel="stylesheet" href="../style/webSiteCalculator.css" >
+    
+      
+</head>
+
+<body>
+    <header id="banner2">
+        <div class="sk">
+            <div class="container2" id="container2">
+                <div class="btn">
+                  <div class="btn-left"></div>
+                  <div class="btn-right"></div>
+                </div>
+              </div>
+            <button class="a1" id="skill">Calculador de notas</button>
+        
+            <button class="a2" id="boletim">Boletim</button>
+            <button class="a3" id="sobre">Video Aula</button>
+            <button class="a4" id="a4">Calculadora</button>
+        </div>
+    </header>
+<main id='tela-principal'>
+<section class='conteudo' id='formulario'>
+
+    <div class="d" id="d"><h1>Calcular Média</h1><div class="fechar"><div class="fx"></div><div class="fx1"></div></div></div>
+<form action="#" method='POST'>
+    <div class='form-group'>
+    <label for="nota1">Nota 1</label>
+    <input type="number" name="nota1" id="nota1" min='0.0' max='10.0' step="0.1" autofocus required onBlur='validarNumero(this)' />
+
+    </div>
+    
+    <div class='form-group'>
+    <label for="nota2">Nota 2</label>
+    <input type="number" name="nota2" id="nota2" min='0.0' max='10.0' step="0.1" required onBlur='validarNumero(this)' />
+    </div>
+
+    <div class='form-group'>
+        <label for="nota3">Nota 3</label>
+        <input type="number" name="nota3" id="nota3" min='0.0' max='10.0' step="0.1" autofocus  required onBlur='validarNumero(this)' />
+        </div>
+
+        <div class='form-group'>
+            <label for="nota4">Nota 4</label>
+            <input type="number" name="nota4" id="nota4" min='0.0' max='10.0' step="0.1"  autofocus required onBlur='validarNumero(this)' />
+            </div>
+
+    <div class='form-group'>
+    <button class='botao' id='btnCalcular' type="submit">Calcular</button>
+    <button type='reset' id='btnLimpar'>Limpar</button>
+    </div>
+
+    <div class='form-group'>
+    <label for="media">Média</label>
+    <input type="number" name="media" id="media" value='' readonly />
+    </div>
+
+    <div class="form-group1">
+    <input type="text" name="situacao" class="cx" id="situacao" placeholder='Situação Final' readonly />
+    </div>
+</form>
+    <p id='aviso' class=''></p>
+</section>
+</main>
+
+<div class="container" id="batata">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text">CALCULADORA</p><div id="fechar"><div class="fx2"></div><div class="fx3"></div></div>
+            <div id="calculadora">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" id="tela" maxlength="30" readonly="readonly" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="apagarAnterior" value="<-" /></td>
+                        <td><input type="button" id="limparTela" value="C" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="num7" value="7" /></td>
+                        <td><input type="button" id="num8" value="8" /></td>
+                        <td><input type="button" id="num9" value="9" /></td>
+                        <td><input type="button" id="divisao" value="/" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="num4" value="4" /></td>
+                        <td><input type="button" id="num5" value="5" /></td>
+                        <td><input type="button" id="num6" value="6" /></td>
+                        <td><input type="button" id="multiplicacao" value="*" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="num1" value="1" /></td>
+                        <td><input type="button" id="num2" value="2" /></td>
+                        <td><input type="button" id="num3" value="3" /></td>
+                        <td><input type="button" id="subtracao" value="-" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="num0" value="0" /></td>
+                        <td><input type="button" id="ponto" value="." /></td>
+                        <td><input type="button" id="resultado" value="=" /></td>
+                        <td><input type="button" id="soma" value="+" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- menu videoaulas -->
+
+<div class="sla" id="sla">
+    
+    
+    
+    <div class="hero">
+        <div class="exit2" id="exit2">
+            
+        </div>
+        <header id="masthead" class="header" role="banner">
+          <div class="container3">
+            <button class="hamburger hamburger--boring" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+              <span class="hamburger-label">Menu</span>
+            </button>
+                  
+            <nav id="site-nav" role="navigation">
+              <div class="col">
+                <h4>Humanas</h4>
+                <ul>
+                  <li><a href="#">Filosofia</a></li><br>
+                  <li><a href="#">História</a></li><br>
+                  <li><a href="#">Geografia</a></li><br>
+                  <li><a href="#">Português</a></li><br>
+                  <li><a href="#">Sociologia</a></li>
+                </ul>            
+              </div>
+              <div class="col">
+                <h4>Exatas</h4>
+                <ul>
+                  <li><a href="#">Matemática</a></li><br>
+                  <li><a href="#">Física</a></li><br>
+                </ul> 
+              </div>
+              <div class="col">
+                <h4>Linguas Estrangeiras</h4>
+                <ul>
+                  <li><a href="#">Espanhol</a></li><br>
+                  <li><a href="#">Inglês</a></li><br>
+                </ul>             
+              </div>
+              <div class="col">
+                <h4>Para imprimir/Dicas</h4>
+                <ul>
+                  <li><a href="#">Folha de redação</a></li><br>
+                  <li><a href="#">Folha de mapa mental</a></li><br>
+                  <li><a href="#">Folha de Checklist</a></li><br>
+                  <li><a href="#">Dicas</a></li><br><br><br>
+                </ul>               
+              </div>
+              
+              
+              
+                
+          </nav>
+        </div>
+      </header>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(function() {
+    $('body').addClass('js');
+  
+    var $hamburger = $('.hamburger'),
+        $nav = $('#site-nav'),
+        $masthead = $('#masthead');
+  
+    $hamburger.click(function() {
+      $(this).toggleClass('is-active');
+      $nav.toggleClass('is-active');
+      $masthead.toggleClass('is-active');
+      return false; 
+    })
+});
+    document.addEventListener("DOMContentLoaded", function () {
+
+var tela = document.getElementById("tela");
+
+//Array de elementos que receber uma listener
+var listenerBtn = [];
+
+//teclas adicionais do teclado
+var btnResultado = document.getElementById("resultado");
+var btnLimparTela = document.getElementById("limparTela");
+var btnApagarAnterior = document.getElementById("apagarAnterior");
+
+listenerBtn.push(document.getElementById("ponto"));
+
+//teclas dos operadores
+listenerBtn.push(document.getElementById("soma"));
+listenerBtn.push(document.getElementById("subtracao"));
+listenerBtn.push(document.getElementById("divisao"));
+listenerBtn.push(document.getElementById("multiplicacao"));
+
+//teclas númericas da calculadora
+listenerBtn.push(document.getElementById("num0"));
+listenerBtn.push(document.getElementById("num1"));
+listenerBtn.push(document.getElementById("num2"));
+listenerBtn.push(document.getElementById("num3"));
+listenerBtn.push(document.getElementById("num4"));
+listenerBtn.push(document.getElementById("num5"));
+listenerBtn.push(document.getElementById("num6"));
+listenerBtn.push(document.getElementById("num7"));
+listenerBtn.push(document.getElementById("num8"));
+listenerBtn.push(document.getElementById("num9"));
+
+//Adicionando evento de click
+for (var i = 0; i < listenerBtn.length; i++) {
+    listenerBtn[i].addEventListener("click", passarValorTela);
+}
+
+btnResultado.onclick = function () {
+    verificarResulatado();
+}
+
+function verificarResulatado() {
+    try {
+        var aux = tela.value.substring(tela.value.length - 1, tela.value.length);
+        if (verificarOperador(aux)) {
+            apagarAnterior();
+        }
+
+        var valorCalculado = eval(tela.value); //calcular o conteúdo da string
+        if (valorCalculado || valorCalculado == "0") {
+            tela.value = valorCalculado;
+        } else {
+            throw "erro";
+        }
+    } catch (e) {
+        console.error(e);
+    }
+}
+
+function passarValorTela() {
+
+    if (verificarOperador(this.value)) {
+        var aux = tela.value.substring(tela.value.length - 1, tela.value.length);
+        //subtituir o valor do operador pelo atual
+        if (verificarOperador(aux)) {
+            apagarAnterior();
+        }
+    }
+    if (this.value) {
+        tela.value += this.value;
+    }
+
+}
+
+btnApagarAnterior.onclick = function () {
+    apagarAnterior();
+}
+
+function apagarAnterior() {
+    if (tela.value.length > 0) {
+        var aux = tela.value.substring(0, tela.value.length - 1);
+        tela.value = aux;
+    }
+}
+
+btnLimparTela.onclick = function () {
+    tela.value = "";
+}
+
+function verificarOperador(valor) {
+    switch (valor) {
+        case "+":
+            return true;
+        case "-":
+            return true;
+        case "*":
+            return true;
+        case "/":
+            return true;
+
+        default:
+            return false;
+    }
+}
+
+});
+</script>
+<script src='../js/webSiteCalculator.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $('.btn').click(function () {
+  $(this).toggleClass('active');
+});
+        var tst = document.getElementById("skill")
+        var tst2 = document.getElementById("sobre") 
+        let materias = document.getElementById("sla")
+        var contt = document.getElementById("container2")
+        contt.addEventListener("click", ()=>{
+            tst.classList.toggle("aa3")
+            tst2.classList.toggle("aa1")
+        })
+        tst2.addEventListener("click", ()=>{
+            materias.style.display = "flex"
+        })
+        
+
+    </script>
+</body>
+</html> 
